@@ -1,5 +1,5 @@
 # Simulador MIPS
-##Leonardo Simionatto - RA: `113113`
+## Leonardo Simionatto - RA: `113113`
 
 ## 1. Introdução
 
