@@ -86,8 +86,9 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025/blob/main/src/simulador-mips.git
-cd simulador-mips
+git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
+cd SimuladorMIPS_2025
+
 ```
 2. Execute o simulador:
 
