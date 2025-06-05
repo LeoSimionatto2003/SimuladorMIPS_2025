@@ -1,23 +1,84 @@
-# SimuladorMIPS_2025
-Trabalho feito para a P2 da matéria de Arquitetura de computadores.
+# Simulador MIPS
+##Leonardo Simionatto - RA: `113113`
 
-## Descrição
+## 1. Introdução
 
-Este projeto é um simulador para a arquitetura MIPS, desenvolvido para fins educacionais. Ele permite executar instruções básicas em assembly MIPS, visualizar o estado dos registradores e da memória, e acompanhar o fluxo de execução passo a passo.
+Este documento apresenta um simulador para a arquitetura MIPS, desenvolvido com o objetivo de auxiliar no aprendizado e compreensão do funcionamento das instruções básicas da linguagem assembly MIPS. O simulador é capaz de interpretar e executar instruções, manipulando registradores e memória, além de possibilitar a execução passo a passo, visualização de estados internos e teste automatizado.
 
 ---
 
-## Funcionalidades
+## 2. Objetivos
 
-- Suporte a instruções de transferência de dados (`lw`, `sw`, `lh`, `sh`)
-- Operações lógicas (`and`, `or`, `nor`, `andi`, `ori`)
-- Operações aritméticas (`add`, `sub`, `addi`)
-- Controle de fluxo com desvio condicional (`beq`, `bne`) e incondicional (`j`)
-- Operações de shift (`sll`, `srl`)
-- Comparações (`slt`, `slti`)
-- Execução passo a passo e execução completa
-- Visualização de registradores e memória
-- Log detalhado da execução
+- Simular as principais instruções da arquitetura MIPS.  
+- Permitir a execução e depuração de pequenos programas em assembly.  
+- Proporcionar um ambiente educacional para o estudo da arquitetura de computadores.  
+- Facilitar a análise do comportamento das instruções e do fluxo do programa.
+
+---
+
+## 3. Funcionalidades Principais
+
+### 3.1 Suporte a Instruções
+
+O simulador implementa as seguintes categorias de instruções:
+
+- **Transferência de Dados:**  
+  `lw` (load word), `sw` (store word), `lh` (load halfword), `sh` (store halfword).
+
+- **Operações Lógicas:**  
+  `and`, `or`, `nor`, `andi`, `ori`.
+
+- **Operações Aritméticas:**  
+  `add`, `sub`, `addi`.
+
+- **Desvios Condicionais:**  
+  `beq`, `bne`.
+
+- **Desvio Incondicional:**  
+  `j` (jump).
+
+- **Operações de Shift:**  
+  `sll` (shift left logical), `srl` (shift right logical).
+
+- **Comparações:**  
+  `slt`, `slti`.
+
+### 3.2 Execução
+
+- Execução passo a passo para análise detalhada.  
+- Execução completa automática.  
+- Atualização do contador de programa (PC) após cada instrução.  
+- Atualização dos registradores e da memória conforme as instruções executadas.
+
+### 3.3 Visualização
+
+- Exibição do estado dos registradores após execução.  
+- Visualização da memória modificada.  
+- Log detalhado com a linha executada, instrução e valores envolvidos.
+
+---
+
+## 4. Arquitetura do Simulador
+
+O simulador é estruturado em módulos que implementam as funcionalidades principais:
+
+- **Parser:**  
+  Interpreta o código assembly, identifica instruções e operandos.
+
+- **Executor:**  
+  Responsável pela execução das instruções, atualização de registradores e memória.
+
+- **Memória:**  
+  Representada como uma estrutura que simula a RAM, acessível para operações de load e store.
+
+- **Registradores:**  
+  Vetor ou dicionário que armazena os 32 registradores da arquitetura MIPS, com manipulação de nomes simbólicos (ex: `$t0`, `$s1`).
+
+- **Controle de Fluxo:**  
+  Gerencia saltos e desvios, atualizando o contador de programa (PC).
+
+---
+
 
 ---
 
