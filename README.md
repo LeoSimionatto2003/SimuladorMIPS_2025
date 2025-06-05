@@ -40,7 +40,8 @@ Observação: Certifique-se de ter o Python 3 instalado.
 
 3. Carregue seu código MIPS no simulador e acompanhe a execução.
 
-Estrutura do projeto
+Estrutura do projeto:
+
 `src/:` Código-fonte do simulador.
 
 `tests/:` Scripts de testes automáticos para validação das instruções.
