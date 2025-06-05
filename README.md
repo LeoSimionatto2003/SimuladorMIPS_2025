@@ -79,30 +79,17 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 ---
 
-## Como usar
+## 5. Requisitos
 
-### Executando o simulador
+- Python 3.8 ou superior  
+- Para instalar dependências (caso existam bibliotecas externas), execute:  
+  ```bash
+  pip install -r requirements.txt
 
-1. Clone o repositório:
+## 6. Como usar
+### 6.1 Estrutura do projeto
+´´´src/´´´ — Código-fonte do simulador.
 
-```bash
-git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
-cd SimuladorMIPS_2025
+´´´tests/´´´ — Scripts de testes automáticos para validação das instruções.
 
-```
-2. Execute o simulador:
-
-```bash
-python src/main.py
-```
-Observação: Certifique-se de ter o Python 3 instalado.
-
-3. Carregue seu código MIPS no simulador e acompanhe a execução.
-
-Estrutura do projeto:
-
-`src/:` Código-fonte do simulador.
-
-`tests/:` Scripts de testes automáticos para validação das instruções.
-
-`README.md:` Documentação do projeto.
+´´´README.md´´´ — Documentação do projeto.
