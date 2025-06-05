@@ -79,9 +79,6 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 ---
 
-
----
-
 ## Como usar
 
 ### Executando o simulador
