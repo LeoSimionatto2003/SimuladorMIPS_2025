@@ -30,12 +30,13 @@ Este projeto é um simulador para a arquitetura MIPS, desenvolvido para fins edu
 ```bash
 git clone https://github.com/seuusuario/simulador-mips.git
 cd simulador-mips
-
+```
 2. Execute o simulador:
 
-bash
+```bash
 python src/main.py
+```
 Observação: Certifique-se de ter o Python 3 instalado.
 
-Carregue seu código MIPS no simulador e acompanhe a execução.
+3. Carregue seu código MIPS no simulador e acompanhe a execução.
 
