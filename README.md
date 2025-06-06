@@ -88,8 +88,46 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 ## 6. Como usar
 ### 6.1 Estrutura do projeto
-´´´src/´´´ — Código-fonte do simulador.
+```src/``` — Código-fonte do simulador.
 
-´´´tests/´´´ — Scripts de testes automáticos para validação das instruções.
+```tests/``` — Scripts de testes automáticos para validação das instruções.
 
-´´´README.md´´´ — Documentação do projeto.
+```README.md``` — Documentação do projeto.
+### 6.2 Executando o simulador
+1. Clone o repositório:
+```git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
+cd SimuladorMIPS_2025```
+
+2. Execute o simulador:
+```python src/main.py```
+💡 Certifique-se de ter o Python 3 instalado corretamente no sistema.
+3. Carregue seu código MIPS no simulador e acompanhe a execução passo a passo ou completa.
+
+### 7. Exemplo de código MIPS
+Você pode testar o simulador com o seguinte programa:
+
+```addi $t0, $zero, 5
+addi $t1, $zero, 10
+add $t2, $t0, $t1```
+Esse programa carrega os valores 5 e 10 nos registradores `$t0` e `$t1`, respectivamente, e soma ambos armazenando o resultado em `$t2`.
+
+### 8. Como foi feito
+O simulador foi desenvolvido em Python puro, com foco na clareza e organização dos componentes internos. A seguir, os principais aspectos técnicos da implementação:
+
+- Interface gráfica:
+Utiliza tkinter para fornecer uma interface intuitiva com botões para execução passo a passo, execução completa e visualização dos dados da simulação.
+
+- Leitura e parsing de instruções:
+O código MIPS é lido de um arquivo .txt, e as instruções são convertidas para uma estrutura interna que facilita a execução.
+
+- Registradores e memória:
+São simulados com dicionários e listas, respeitando os limites de endereçamento e nomes simbólicos da arquitetura MIPS.
+
+- Controle de execução:
+Um loop de execução interpreta linha por linha e atualiza o contador de programa (PC), respeitando desvios e saltos definidos no código MIPS.
+
+- Log e visualização:
+A execução de cada instrução gera uma entrada no log interno que é mostrado ao usuário. Os estados de memória e registradores também são atualizados em tempo real na interface.
+
+O projeto foi desenvolvido com o intuito de seguir os princípios de separação de responsabilidades e facilitar futuras expansões.
+
