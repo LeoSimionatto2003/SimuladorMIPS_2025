@@ -86,6 +86,8 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
   ```bash
   pip install -r requirements.txt
 
+---
+
 ## 6. Como usar
 ### 6.1 Estrutura do projeto
 ```src/``` — Código-fonte do simulador.
@@ -98,24 +100,24 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 1. Clone o repositório:
 
-``` 
-git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
-cd SimuladorMIPS_2025```
-
+https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
 
 2. Execute o simulador:
-```bash python src/main.py
-💡 Certifique-se de ter o Python 3 instalado corretamente no sistema.
+Certifique-se de ter o Python 3 instalado corretamente no sistema.
 3. Carregue seu código MIPS no simulador e acompanhe a execução passo a passo ou completa.
+
+---
 
 ### 7. Exemplo de código MIPS
 Você pode testar o simulador com o seguinte programa:
 
-``` bash addi $t0, $zero, 5
+addi $t0, $zero, 5
 addi $t1, $zero, 10
-add $t2, $t0, $t1
+add $t2, $t0, $t1`
 
 Esse programa carrega os valores 5 e 10 nos registradores `$t0` e `$t1`, respectivamente, e soma ambos armazenando o resultado em `$t2`.
+
+---
 
 ### 8. Como foi feito
 O simulador foi desenvolvido em Python puro, com foco na clareza e organização dos componentes internos. A seguir, os principais aspectos técnicos da implementação:
@@ -136,4 +138,3 @@ Um loop de execução interpreta linha por linha e atualiza o contador de progra
 A execução de cada instrução gera uma entrada no log interno que é mostrado ao usuário. Os estados de memória e registradores também são atualizados em tempo real na interface.
 
 O projeto foi desenvolvido com o intuito de seguir os princípios de separação de responsabilidades e facilitar futuras expansões.
-
