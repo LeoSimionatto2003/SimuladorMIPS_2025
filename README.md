@@ -100,7 +100,7 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 ```bash
 git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
-cd SimuladorMIPS_2025
+cd SimuladorMIPS_2025 ```
 
 
 2. Execute o simulador:
