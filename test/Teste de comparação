@@ -1,0 +1,4 @@
+addi $t0, $zero, 5
+addi $t1, $zero, 10
+slt $t2, $t0, $t1        # $t2 = 1 (5 < 10)
+slti $t3, $t1, 5         # $t3 = 0 (10 < 5?)
