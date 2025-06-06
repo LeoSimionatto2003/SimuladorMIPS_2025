@@ -98,13 +98,12 @@ O simulador é estruturado em módulos que implementam as funcionalidades princi
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
+```bash git clone https://github.com/LeoSimionatto2003/SimuladorMIPS_2025.git
 cd SimuladorMIPS_2025
 
 
 2. Execute o simulador:
-```python src/main.py```
+```bash python src/main.py
 💡 Certifique-se de ter o Python 3 instalado corretamente no sistema.
 3. Carregue seu código MIPS no simulador e acompanhe a execução passo a passo ou completa.
 
@@ -113,7 +112,8 @@ Você pode testar o simulador com o seguinte programa:
 
 ```addi $t0, $zero, 5
 addi $t1, $zero, 10
-add $t2, $t0, $t1```
+add $t2, $t0, $t1
+```
 Esse programa carrega os valores 5 e 10 nos registradores `$t0` e `$t1`, respectivamente, e soma ambos armazenando o resultado em `$t2`.
 
 ### 8. Como foi feito
