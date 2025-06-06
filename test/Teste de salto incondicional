@@ -1,0 +1,5 @@
+addi $t0, $zero, 0
+j skip
+addi $t0, $zero, 10      # Não deve executar
+skip:
+addi $t1, $zero, 20      # Deve executar
