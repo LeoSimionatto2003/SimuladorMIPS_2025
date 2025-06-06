@@ -110,10 +110,10 @@ cd SimuladorMIPS_2025
 ### 7. Exemplo de código MIPS
 Você pode testar o simulador com o seguinte programa:
 
-```addi $t0, $zero, 5
+``` bash addi $t0, $zero, 5
 addi $t1, $zero, 10
 add $t2, $t0, $t1
-```
+
 Esse programa carrega os valores 5 e 10 nos registradores `$t0` e `$t1`, respectivamente, e soma ambos armazenando o resultado em `$t2`.
 
 ### 8. Como foi feito
